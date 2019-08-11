@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from bott.views import home, get_response
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('chat/', home),
+    path('get_response/', get_response),
 ]

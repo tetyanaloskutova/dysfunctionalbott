@@ -23,8 +23,8 @@ window.onload = function () {
     this.input = '';
 //just incase
     this.send_blank = false;
-    this.placeholder = "Send a message to the chatbot...";
-fetch("/get-response/", {
+    this.placeholder = "Send a message to the bot...";
+fetch("/get_response/", {
            body: JSON.stringify({'message': message['text']}),
            cache: 'no-cache',
            credentials: 'same-origin',

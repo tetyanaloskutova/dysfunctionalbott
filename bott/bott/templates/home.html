@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block js %}
-  <script type="text/javascript" src="/static/js/script.js"></script>
+  <script type="text/javascript" src="/static/js/scriptbot.js"></script>
 {% endblock %}
 {% block content %}
   <div id="app" class="container top-padding">
@@ -17,8 +17,9 @@
    <div id="text-box" class="row top-padding">
     <div class="col-md-12">
      <textarea class="form-control" v-bind:placeholder="placeholder" v-model="input" v-bind:class="{ 'border-danger': send_blank}" v-on:change="check_content"></textarea>
-     <i class="fas fa-arrow-circle-right send-btn" v-on:click="add_message"></i>
+     <i class="fa fa-arrow-circle-right send-btn" style="font-size:16px" v-on:click="add_message">Send</i>
     </div>
    </div>
+
   </div>
 {% endblock %}

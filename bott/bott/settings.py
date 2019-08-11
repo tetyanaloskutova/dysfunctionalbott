@@ -80,7 +80,14 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
+STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
