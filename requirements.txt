@@ -49,7 +49,6 @@ requests==2.22.0
 Send2Trash==1.5.0
 simpleneighbors==0.0.1
 six==1.12.0
-spacy==2.1.4
 sqlparse==0.3.0
 srsly==0.0.7
 terminado==0.8.2
