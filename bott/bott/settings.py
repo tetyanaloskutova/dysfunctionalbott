@@ -23,9 +23,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f81b-km-lps659lb5kaceb#h#+41xa5&)o3a^f9l6ab0%d6&r('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -127,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+ALLOWED_HOSTS = ['127.0.0.1']
 try:
     from settings_local import *
 except ImportError:
