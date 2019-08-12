@@ -4,8 +4,11 @@ import json
 from django.views.decorators.csrf import csrf_exempt
 import Algorithmia
 
+#client = Algorithmia.client('simGBUPXKvkvvjWFTf/VxTy9P2l1')
+#algo = client.algo('dysfunctionalbot/Hello/0.1.0')
 client = Algorithmia.client('simGBUPXKvkvvjWFTf/VxTy9P2l1')
-algo = client.algo('dysfunctionalbot/Hello/0.1.0')
+algo = client.algo('dysfunctionalbot/Jokes/0.1.1')
+
 algo.set_options(timeout=300) # optional
 
 
